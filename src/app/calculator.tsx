@@ -24,7 +24,7 @@ export default function Calculator() {
             key={v}
             type="button"
             onClick={() => add(v)}
-            className="aspect-square rounded-2xl bg-zinc-200 text-7xl font-semibold text-black transition-colors hover:bg-zinc-300 active:bg-zinc-400 dark:bg-zinc-800 dark:text-zinc-50 dark:hover:bg-zinc-700"
+            className="aspect-[4/3] rounded-2xl bg-zinc-200 text-7xl font-semibold text-black transition-colors hover:bg-zinc-300 active:bg-zinc-400 sm:aspect-square dark:bg-zinc-800 dark:text-zinc-50 dark:hover:bg-zinc-700"
           >
             {v}
           </button>
@@ -32,7 +32,7 @@ export default function Calculator() {
         <button
           type="button"
           onClick={reset}
-          className="aspect-square rounded-2xl bg-red-500 text-4xl font-semibold text-white transition-colors hover:bg-red-600 active:bg-red-700"
+          className="aspect-[4/3] rounded-2xl bg-red-500 text-4xl font-semibold text-white transition-colors hover:bg-red-600 active:bg-red-700 sm:aspect-square"
         >
           reset
         </button>
